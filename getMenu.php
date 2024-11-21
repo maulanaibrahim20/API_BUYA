@@ -15,11 +15,11 @@ $json = array(
 
 if (isset($_GET['kategori'])) {
     $kategori = $_GET['kategori'];
-    $sql = "SELECT id_menu, nama_menu, harga_menu, deskripsi, foto_menu_path FROM menus WHERE kategori = '$kategori'";
+    $sql = "SELECT id_menu, nama_menu, harga_menu, deskripsi, foto_menu_path FROM menu WHERE kategori_menu = '$kategori'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
+        while ($row = $result->fetch_assoc()) {
             $arr_row = array(
                 "id_menu" => $row['id_menu'],
                 "nama_menu" => $row['nama_menu'],
@@ -40,4 +40,3 @@ if (isset($_GET['kategori'])) {
 
 echo json_encode($json, JSON_PRETTY_PRINT);
 $conn->close();
-?>

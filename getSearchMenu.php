@@ -13,6 +13,12 @@ $json = array(
     "data" => array()
 );
 
+// Parameter sorting default
+$sort_order = "ASC"; // Default sorting: termurah ke termahal
+if (isset($_GET['sort']) && strtolower($_GET['sort']) == "desc") {
+    $sort_order = "DESC"; // Ubah ke termahal ke termurah jika parameter "sort=desc"
+}
+
 if (isset($_GET['search'])) {
     $keyword = $conn->real_escape_string($_GET['search']);
 
