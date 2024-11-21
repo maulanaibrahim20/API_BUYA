@@ -1,0 +1,15 @@
+php artisan serve --host=192.168.43.189 = ADMIN (Hotspot)
+php artisan serve --host=192.168.0.102 = ADMIN (Wifi R)
+php artisan serve --host=10.0.173.86 = ADMIN (Kampus)
+192.168.0.102
+
+flutter run -d chrome --web-renderer html = PELANGGAN
+
+php artisan storage:link = UP STORAGE
+
+*NOTE : Gunakan IP Adress sesuai IP kalian
+
+(USER) 		= (Username) - (Password)
+ADMIN		= sans - sans
+PELANGGAN 	= 12345 - 12345 (optional check database tabel "pelanggan")
+DRIVER 		= 20242025 - 20242025
