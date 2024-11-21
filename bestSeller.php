@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 
 // Koneksi database
-$conn = new mysqli("localhost", "root", "Bayubiantara1", "db_buya");
+$conn = new mysqli("localhost", "root", "", "db_buya");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
