@@ -25,7 +25,7 @@ if (isset($_GET['kategori'])) {
                 "nama_menu" => $row['nama_menu'],
                 "harga_menu" => $row['harga_menu'],
                 "deskripsi" => $row['deskripsi'],
-                "foto_menu_path" => "http://10.0.164.244/buyaglg/public/storage/uploads/" . $row['foto_menu_path']
+                "foto_menu_path" => "http://192.168.168.62/API/uploads/" . pathinfo($row['foto_menu_path'], PATHINFO_FILENAME),
             );
             $json['data'][] = $arr_row;
         }
